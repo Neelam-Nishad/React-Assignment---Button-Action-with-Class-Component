@@ -11,7 +11,7 @@ class App extends Component {
   show() {
     this.setState({
       paragraph:
-        "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
+        "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy "
     });
   }
   render() {
