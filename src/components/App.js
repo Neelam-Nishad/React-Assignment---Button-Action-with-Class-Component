@@ -1,26 +1,29 @@
-import React, {Component, useState} from "react";
-import '../styles/App.css';
+import React, { Component } from "react";
+import "../styles/App.css";
 
 class App extends Component {
-    constructor(props) {
-		super(props);
-	};
-	
-	let temp = "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy";
+  constructor(props) {
+    super(props);
+    this.state = { paragraph: "" };
+  }
 
-    render() {
-    	return(
-    		<div id="main">
-			<button id="click" onClick={ () => {
-						render(){
-							<p id="para">{temp}</p>
-						}	
-			} }>click</button>
-    		</div>
-    	);
-    }
+  show() {
+    this.setState({
+      paragraph: "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
+    });
+  }
+  render() {
+    return (
+      <div id="main">
+        <p id="para">{this.state.paragraph}</p>
+        <button id="click" onClick={this.show()}>
+          click
+        </button>
+      </div>
+    );
+  }
 }
 
-
 export default App;
+
 
