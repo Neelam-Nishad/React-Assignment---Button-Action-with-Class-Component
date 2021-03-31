@@ -11,13 +11,13 @@ class App extends Component {
   show() {
     this.setState({
       paragraph:
-        "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
+	    {<p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>}
     });
   }
   render() {
     return (
       <div id="main">
-        <p id="para">{this.state.paragraph}</p>
+        {this.state.paragraph}
         <button id="click" onClick={this.show}>
           click
         </button>
