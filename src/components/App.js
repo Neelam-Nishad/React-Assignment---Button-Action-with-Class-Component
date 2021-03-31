@@ -4,7 +4,7 @@ import "../styles/App.css";
 class App extends Component {
   constructor(props) {
     super(props);
-	this.state = { paragraph: <p></p> };
+	this.state = { paragraph: "" };
 	this.show = this.show.bind(this);
   }
 
