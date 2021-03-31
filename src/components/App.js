@@ -4,14 +4,14 @@ import "../styles/App.css";
 class App extends Component {
   constructor(props) {
     super(props);
-	this.state = { paragraph: "" };
+	this.state = { paragraph: <p></p> };
 	this.show = this.show.bind(this);
   }
 
   show() {
     this.setState({
       paragraph:
-	    {<p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>}
+	    <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>
     });
   }
   render() {
